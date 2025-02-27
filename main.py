@@ -303,8 +303,8 @@ async def process_wallets():
 
         print(f"{Fore.RED}\n=== 开始处理钱包: {Fore.GREEN}{wallet_address}{Fore.RED}{' 使用代理: ' + proxy if proxy else ''} ==={Style.RESET_ALL}")
 
-        print(f"{Fore.BLUE}正在为 {wallet_address} 申请水龙头...{Style.RESET_ALL}")
-        await claim_faucet(wallet_address, proxy)
+       # print(f"{Fore.BLUE}正在为 {wallet_address} 申请水龙头...{Style.RESET_ALL}")
+      #  await claim_faucet(wallet_address, proxy)
 
         await ensure_unlimited_spending(web3_instance, private_key, contractAddress)
 
